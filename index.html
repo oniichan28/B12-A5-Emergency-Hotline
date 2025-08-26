@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service Directory</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <!-- Navbar Here -->
+     <div class="navbar bg-base-100 shadow-md">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl">
+    <img src="./assets/logo.png" class="w-[50px] h-[50px]" alt="">
+    <h3 class="text-2xl text-[#006747] font-bold w-[135px]h-[45px] ">Emergency <br> Service</h3>
+  </a>
+  </div>
+  <div class="flex-none flex items-center gap-4">
+    <div class="flex items-center gap-2">
+      <div class="w-[120px] h-[50px] rounded-[50px] justify-center items-center text-center content-center flex font-bold bg-[#41FF6B]/10 gap-2 opacity-10%">
+        <span id="heartCount" class="font-bold">0</span>
+      <img src="./assets/heart.png" class="w-[25px] h-[25px]" alt="">
+      </div>
+     <div class="w-[120px] h-[50px] rounded-[50px] justify-center items-center text-center content-center flex font-bold bg-[#41FF6B]/10 gap-2 opacity-10%"> <span id="coinCount" class="font-bold">100</span>
+      <img src="./assets/coin.png" class="w-[25px] h-[25px]" alt="">
+    </div>
+      <span id="" class="bg-[#00A63E] w-[120px] h-[50px] rounded-[50px] justify-center items-center text-center content-center text-white font-bold">0 Copy</span>
+    </div>
+    <div>
+      
+    </div>
+  </div>
+</div>
 </body>
 </html>
