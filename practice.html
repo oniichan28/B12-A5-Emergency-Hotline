@@ -1,0 +1,119 @@
+<main class="mx-auto px-2 md:px-4 py-4 md:py-6 grid grid-cols-1 md:grid-cols-5 gap-3  ">
+
+  <!-- Card Section Here -->
+  <div class="md:col-span-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+
+      <!-- Column 1 (4 cards) -->
+      <div class="flex flex-col gap-4 md:gap-6">
+        
+        <!-- National Emergency -->
+      
+
+        <!-- Police Helpline -->
+       
+
+        <!-- Police Helpline (duplicate) -->
+       
+
+        <!-- Fire Service -->
+      
+
+      </div>
+
+      <!-- Column 2 (3 cards) -->
+      <div class="flex flex-col gap-4 md:gap-6">
+
+        <!-- Ambulance -->
+      
+
+        <!-- Women & Child Helpline -->
+      
+
+        <!-- Anti-Corruption -->
+       
+
+      </div>
+
+      <!-- Column 3 (3 cards) -->
+      <div class="flex flex-col gap-4 md:gap-6">
+
+        <!-- Electricity -->
+        <section>
+          <div class="h-[220px] md:h-[240px] card bg-white shadow-lg border-gray-500 p-4 relative flex flex-col">
+            <button class="absolute top-2 right-2"><i class="fa-regular fa-heart"></i></button>
+            <div class="flex-grow">
+              <img src="./assets/emergency.png" class="w-[32px] h-[32px] bg-[#FFE3E2] rounded-lg p-2" alt="">
+              <h3 class="hind-madurai-bold text-[16px]">Electricity Helpline</h3>
+              <p class="text-[#5C5C5C] text-[14px]">Electricity Outage</p>
+              <h2 class="font-bold md:text-lg">16216</h2>
+              <span class="badge bg-[#F2F2F2] mt-2">Electricity</span>
+            </div>
+            <div class="flex justify-center gap-3">
+              <button class="btn btn-outline w-[80px] h-[30px] text-gray-500 text-base"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="btn bg-[#00A63E] call-btn text-white w-[80px] h-[30px] text-base"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Brac -->
+        <section>
+          <div class="h-[220px] md:h-[240px] card bg-white shadow-lg border-gray-500 p-4 relative flex flex-col">
+            <button class="absolute top-2 right-2"><i class="fa-regular fa-heart"></i></button>
+            <div class="flex-grow">
+              <img src="./assets/emergency.png" class="w-[32px] h-[32px] bg-[#FFE3E2] rounded-lg p-2" alt="">
+              <h3 class="hind-madurai-bold text-[16px]">Brac Helpline</h3>
+              <p class="text-[#5C5C5C] text-[14px]">Brac</p>
+              <h2 class="font-bold md:text-lg">16445</h2>
+              <span class="badge bg-[#F2F2F2] mt-2">NGO</span>
+            </div>
+            <div class="flex justify-center gap-3">
+              <button class="btn btn-outline w-[80px] h-[30px] text-gray-500 text-base"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="btn bg-[#00A63E] call-btn text-white w-[80px] h-[30px] text-base"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Railway -->
+        <section>
+          <div class="h-[220px] md:h-[240px] card bg-white shadow-lg border-gray-500 p-4 relative flex flex-col">
+            <button class="absolute top-2 right-2"><i class="fa-regular fa-heart"></i></button>
+            <div class="flex-grow">
+              <img src="./assets/emergency.png" class="w-[32px] h-[32px] bg-[#FFE3E2] rounded-lg p-2" alt="">
+              <h3 class="hind-madurai-bold text-[16px]">Bangladesh Railway Helpline</h3>
+              <p class="text-[#5C5C5C] text-[14px]">Bangladesh Railway</p>
+              <h2 class="font-bold md:text-lg">163</h2>
+              <span class="badge bg-[#F2F2F2] mt-2">Travel</span>
+            </div>
+            <div class="flex justify-center gap-3">
+              <button class="btn btn-outline w-[80px] h-[30px] text-gray-500 text-base"><i class="fa-solid fa-copy"></i> Copy</button>
+              <button class="btn bg-[#00A63E] call-btn text-white w-[80px] h-[30px] text-base"><i class="fa-solid fa-phone"></i> Call</button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Call History Column -->
+  <div class="md:col-span-1 flex flex-col gap-4 md:gap-6 bg-[#FFFFFF] p-3 md:p-4 rounded-lg shadow mt-4 md:mt-0">
+    <div class="flex items-center justify-between mb-3 md:mb-4">
+      <h2 class="text-[12px] md:text-[10px] flex items-center gap-2">
+        <i class="fa-solid fa-clock-rotate-left text-[16px]"></i> Call History
+      </h2>
+      <button id="clearHistoryBtn" class="btn btn-xs btn-outline text-[10px] bg-[#00A63E] text-white rounded-2xl">Clear</button>
+    </div>
+    <ul id="historyList" class="space-y-2 text-gray-700">
+      <li class="flex items-center gap-2">
+        <span class="badge bg-[#F2F2F2]">999</span>
+        <span class="text-xs text-gray-500">National Emergency</span>
+      </li>
+      <li class="flex items-center gap-2">
+        <span class="badge bg-[#F2F2F2]">109</span>
+        <span class="text-xs text-gray-500">Women & Child Helpline</span>
+      </li>
+    </ul>
+  </div>
+
+</main>
