@@ -3,54 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Service Directory</title>
-    <!-- Daisy UI CDN -->
+    <title>Document</title>
+      <!-- Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <!-- Font Awesome CDN -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
- <!-- Hind Sans Font CDN -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header>
-     <!-- Navbar Here -->
-     <div class="navbar bg-base-100 shadow-sd mt-5 px-2 md:px-0">
-  <div class="navbar-start flex items-center">
-    <a class="btn btn-ghost text-xl flex items-center gap-2">
-      <img src="./assets/logo.png" class="w-[40px] h-[40px] md:w-[50px] md:h-[50px]" alt="">
-      <h3 class="text-lg md:text-2xl text-[#006747] font-bold w-[110px] md:w-[135px] h-[35px] md:h-[45px] hind-madurai-bold">Emergency <br> Service</h3>
-    </a>
-  </div>
-  <div class="flex-1 flex justify-end items-center gap-2 md:gap-4">
-    <div class="flex items-center gap-1 md:gap-2">
-      <div class="w-[70px] md:w-[120px] h-[35px] md:h-[50px] rounded-[50px] justify-center items-center text-center content-center flex font-bold bg-[#41FF6B]/10 gap-1 md:gap-2 opacity-10%">
-        <span id="heartCount" class="font-bold">0</span>
-        <img src="./assets/heart.png" class="w-[18px] md:w-[25px] h-[18px] md:h-[25px]" alt="">
-      </div>
-      <div class="w-[70px] md:w-[120px] h-[35px] md:h-[50px] rounded-[50px] justify-center items-center text-center content-center flex font-bold bg-[#41FF6B]/10 gap-1 md:gap-2 opacity-10%">
-        <span id="coinCount" class="font-bold">100</span>
-        <img src="./assets/coin.png" class="w-[18px] md:w-[25px] h-[18px] md:h-[25px]" alt="">
-      </div>
-      <span id="copyCount" class="bg-[#00A63E] w-[70px] md:w-[120px] h-[35px] md:h-[50px] rounded-[50px] justify-center items-center text-center content-center text-white font-bold text-xs md:text-base">0 Copy</span>
-    </div>
-  </div>
-</div>
-<!-- Banner Section Here -->
- <section class="bg-gradient-to-b from-[#013223] via-[#006747] to-[#013223] max-w-full h-[160px] md:h-[240px] flex flex-col justify-center items-center mt-4 px-2">
-  <img src="./assets/logo-dark.png" class="w-[60px] h-[60px] md:w-[90px] md:h-[90px]" alt="">
-  <h1 class="font-bold text-white text-2xl md:text-4xl mt-2 hind-madurai-bold">Emergency Service Directory</h1>
-  <h3 class="font-semibold mt-2 md:mt-4 text-white text-xs md:text-base text-center hind-madurai-bold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</h3>
- </section>
-   </header>
-
-<!-- Card Section Here -->
-<main class="mx-auto px-2 md:px-4 py-4 md:py-10 grid grid-cols-1 md:grid-cols-5 gap-3 bg-[#F5FFF6]">
-    <div class="md:col-span-4 flex flex-col gap-4 md:gap-6">
+    <main class="mx-auto px-2 md:px-4 py-4 md:py-10 grid grid-cols-1 md:grid-cols-5 gap-3 bg-[#F5FFF6]">
+  
+  <div class="md:col-span-4 flex flex-col gap-4 md:gap-6">
     
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
       <section>
@@ -197,10 +162,7 @@
       </div>
 </div>
   </section>
-   
-
-      <section>
-<div class="h-[200px] md:h-[240px] card bg-white shadow-lg border-gray-500 p-3 md:p-4 relative flex flex-col">
+  <div class="h-[200px] md:h-[240px] card bg-white shadow-lg border-gray-500 p-3 md:p-4 relative flex flex-col">
   <button class="absolute top-2 right-2 heart-btn cursor-pointer">
   <i class="fa-regular fa-heart"></i>
 </button>
@@ -258,12 +220,14 @@
 </div>
   </section>
     </div>
+    </div>
 
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+      <section>
 
- 
+  </div>
 
-</div>
- <div class="md:col-span-1 flex flex-col gap-4 md:gap-6 bg-[#FFFFFF] p-3 md:p-4 rounded-lg shadow mt-4 md:mt-0">
+  <div class="md:col-span-1 flex flex-col gap-4 md:gap-6 bg-[#FFFFFF] p-3 md:p-4 rounded-lg shadow mt-4 md:mt-0">
     <div class="flex items-center justify-between mb-3 md:mb-4">
       <h2 class="text-xs md:text-[10px] flex items-center gap-2">
         <i class="fa-solid fa-clock-rotate-left text-base md:text-[16px]"></i> Call History
@@ -275,9 +239,7 @@
       
     </ul>
   </div>
-</main>
 
-<!-- JS Connection Here  -->
- <script src="./script.js"></script>
+</main>
 </body>
 </html>

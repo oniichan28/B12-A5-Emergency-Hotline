@@ -13,16 +13,20 @@ document.addEventListener("DOMContentLoaded", function () {
   let copies = parseInt(copyCountEl.textContent);
   copyCountEl.textContent = `${copies} Copy`;
 
-
   // Heart Buttons
   heartButtons.forEach(btn => {
     btn.addEventListener("click", function () {
+      const icon = this.querySelector("i");
+      if (!icon.classList.contains("fa-solid")) {
+        icon.classList.remove("fa-regular");
+        icon.classList.add("fa-solid", "text-red-500");
+      }
       hearts++;
       heartCountEl.textContent = hearts;
     });
   });
 
-  // Call Buttons
+  // Call Buttons 
   callButtons.forEach(btn => {
     btn.addEventListener("click", function () {
       const card = btn.closest(".card");
@@ -37,12 +41,31 @@ document.addEventListener("DOMContentLoaded", function () {
       coins -= 20;
       coinCountEl.textContent = coins;
 
-      const time = new Date().toLocaleTimeString();
+      
+      const time = new Date().toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+      });
+
       alert(`Calling ${serviceName} at ${serviceNumber} (${time})`);
 
+      // Create History Card Item
       const li = document.createElement("li");
-      li.textContent = `${serviceName} - ${serviceNumber} (${time})`;
-      historyList.appendChild(li);
+      li.className = "bg-white shadow p-2 rounded flex justify-between items-center";
+
+      li.innerHTML = `
+  <div>
+    <h4 class="font-bold text-sm">${serviceName}</h4>
+    <p class="text-xs ">${serviceNumber}</p>
+  </div>
+  <span class="text-[10px] font-bold">${time}</span>
+`;
+
+
+     
+      historyList.prepend(li);
     });
   });
 
