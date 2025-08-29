@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(() => {
           alert(`Copied ${serviceNumber} to clipboard`);
           copies++;
-          copyCountEl.textContent = copies;
+          copyCountEl.textContent = `${copies} Copy`;
         })
         .catch(err => console.error("Failed to copy:", err));
     });
